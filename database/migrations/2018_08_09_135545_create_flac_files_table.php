@@ -32,6 +32,7 @@ class CreateFlacFilesTable extends Migration
             $table->unsignedDecimal('play_time_seconds', 11, 7);
             $table->string('md5_data_source', 32);
             $table->string('sha256', 64);
+            $table->unsignedInteger('album_id');
             $table->timestamps();
         });
     }
